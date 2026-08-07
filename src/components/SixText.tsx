@@ -43,7 +43,7 @@ export default function SixText({ phase }: SixTextProps) {
             ]
           }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 2, times: [0, 0.18, 0.3, 0.85, 1], ease: [0.2, 1.6, 0.3, 1] }}
+          transition={{ duration: 3.2, times: [0, 0.12, 0.2, 0.88, 1], ease: [0.2, 1.6, 0.3, 1] }}
         >
           SIX!
         </motion.div>

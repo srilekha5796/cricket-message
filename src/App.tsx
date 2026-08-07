@@ -58,7 +58,7 @@ export default function App() {
     }, 500 + 820 + 600);
     schedule(() => setPhase("six-flight"), 500 + 820 + 600 + 260);
     schedule(() => setPhase("celebration"), 500 + 820 + 600 + 260 + 150);
-    schedule(() => setPhase("result"), 500 + 820 + 600 + 260 + 150 + 2300);
+    schedule(() => setPhase("result"), 500 + 820 + 600 + 260 + 150 + 3400);
   };
 
   const playAgain = () => {
@@ -97,7 +97,7 @@ export default function App() {
         <Confetti phase={phase} />
         <SixText phase={phase} />
 
-        <ResultScreen phase={phase} onPlayAgain={playAgain} />
+        <ResultScreen phase={phase} onPlayAgain={playAgain} playerName="Rahul Poral" />
       </motion.div>
     </div>
   );
